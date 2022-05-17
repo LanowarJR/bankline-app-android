@@ -17,7 +17,7 @@ class WelcomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        binding.btContinue.setOnClickListener{
+        binding.btContinue.setOnClickListener {
             val accountHolderId = binding.etAccountHolderId.text.toString().toInt()
             val accountHolder = Correntista(accountHolderId)
 

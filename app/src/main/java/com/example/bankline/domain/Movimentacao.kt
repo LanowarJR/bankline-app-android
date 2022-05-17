@@ -1,5 +1,7 @@
 package com.example.bankline.domain
 
+import com.google.gson.annotations.SerializedName
+
 data class Movimentacao(
 
     val id: Int,
@@ -7,7 +9,7 @@ data class Movimentacao(
     val descricao: String,
     val valor: Double,
     val tipo: TipoMovimentacao,
-    //TODO mapear "idConta -> idCorrentista"
+    @SerializedName("idConta")
     val idCorrentista: Int
 
 
